@@ -1,0 +1,17 @@
+{
+  // https://nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "useDefineForClassFields": false,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "types": [
+      "@nuxtjs/date-fns",
+      "@nuxt/types",
+      "@nuxtjs/i18n"
+    ],
+    "exclude": ["node_modules", ".nuxt"],
+    "typeRoots": ["./types"]
+  }
+}

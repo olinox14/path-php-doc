@@ -1,24 +1,78 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+
 export default defineNuxtConfig({
   ssr: true,
-  devtools: { enabled: true },
-  modules: [
-    '@nuxt/content'
-  ],
-  server: {
-    host: '0.0.0.0',
+  title: 'Path-PHP Documentation',
+  devtools: {
+    // @see https://github.com/nuxt/devtools
+    enabled: true,
   },
-  build: {
-    hotMiddleware: {
-      client: {
-        host: '0.0.0.0',
-      },
+  app: {
+    head: {
+      title: 'Path-PHP Documentation',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap',
+        },
+      ],
     },
   },
-  watchers: {
-    webpack: {
-      aggregateTimeout: 300,
-      poll: 1000
+  build: {
+    transpile: ['vuetify'],
+  },
+  hooks: {
+    'builder:watch': console.log,
+  },
+  css: [
+    'vuetify/lib/styles/main.sass',
+  ],
+  modules: [
+    '@nuxt/content',
+    async (_, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (config) =>
+          // @ts-expect-error A revoir après que les lignes aient été décommentées
+          (config.plugins ?? []).push(
+              vuetify()
+              // Remplacer par cela quand l'issue https://github.com/vuetifyjs/vuetify-loader/issues/273 sera règlée..
+              // voir aussi : https://github.com/nuxt/nuxt/issues/15412 et https://github.com/vuetifyjs/vuetify-loader/issues/290
+              // voir aussi : https://github.com/jrutila/nuxt3-vuetify3-bug
+              // vuetify({
+              //     styles: { configFile: './assets/css/settings.scss' }
+              // })
+          )
+      )
+    },
+    'nuxt-lodash',
+    '@nuxt/devtools',
+  ],
+  webfontloader: {
+    google: {
+      families: ['Barlow:300,400,500,700&display=swap'],
+    },
+  },
+  vite: {
+    esbuild: {
+      drop: process.env.DEBUG ? [] : ['console', 'debugger'],
+      tsconfigRaw: {
+        compilerOptions: {
+          experimentalDecorators: true,
+        },
+      },
+    },
+    ssr: {
+      noExternal: ['vuetify'],
+    },
+    vue: {
+      template: {
+        transformAssetUrls,
+      },
     },
   },
 })
