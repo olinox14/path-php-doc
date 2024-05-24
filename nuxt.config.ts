@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     'builder:watch': console.log,
   },
   css: [
-    'vuetify/lib/styles/main.sass',
+    'vuetify/lib/styles/main.sass'
   ],
   modules: [
     '@nuxt/content',

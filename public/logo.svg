@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="85.890251mm"
+   height="22.021664mm"
+   viewBox="0 0 304.33554 78.029517"
+   id="svg4142"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="C:\Users\olinox\Documents\dev\path-php-doc\public\logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4144" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="159.02821"
+     inkscape:cy="-1.0882254"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showborder="false" />
+  <metadata
+     id="metadata4147">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background"
+     transform="translate(-219.87947,-487.16634)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4696"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+         id="flowRegion4698"><rect
+           id="rect4700"
+           width="255.06352"
+           height="43.436558"
+           x="130.81476"
+           y="262.92798" /></flowRegion><flowPara
+         id="flowPara4702">/Pathphp</flowPara></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="text"
+     style="opacity:1">
+    <g
+       id="g4149">
+      <rect
+         ry="19.697975"
+         y="487.54437"
+         x="220.25751"
+         height="77.273445"
+         width="303.57947"
+         id="rect4690"
+         style="opacity:0.98000004;fill:#757cb3;fill-opacity:1;stroke:#151515;stroke-width:0.75607014;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="translate(-219.87947,-487.16634)" />
+      <flowRoot
+         transform="matrix(1.3702482,0,0,1.3702482,-134.77258,-180.73476)"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Handel Gothic';-inkscape-font-specification:'Handel Gothic, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot4704"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4706"><rect
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Handel Gothic';-inkscape-font-specification:'Handel Gothic, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke:#ffffff;stroke-opacity:1"
+             y="130.93364"
+             x="112.14286"
+             height="45.714287"
+             width="258.57144"
+             id="rect4708" /></flowRegion><flowPara
+           id="flowPara4712">/path-php</flowPara></flowRoot>    </g>
+  </g>
+</svg>
