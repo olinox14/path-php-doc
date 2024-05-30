@@ -47,6 +47,9 @@ export const lightTheme: Theme = {
     'background': '#ffffff',
     'on-background': '#000000',
 
+    'code-background': '#f6f8fa',
+    'on-code-background': '#000000',
+
     'surface': '#ffffff',
     'on-surface': '#000000',
 
@@ -89,6 +92,9 @@ export const darkTheme: Theme = {
   colors: {
     'background': '#1a1a1a',
     'on-background': '#ffffff',
+
+    'code-background': '#161b22',
+    'on-code-background': '#ffffff',
 
     'surface': '#262626',
     'on-surface': '#ffffff',

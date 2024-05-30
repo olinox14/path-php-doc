@@ -34,7 +34,6 @@ export default defineNuxtConfig({
     'vuetify/lib/styles/main.sass'
   ],
   modules: [
-    '@nuxt/content',
     async (_, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) =>
           // @ts-expect-error A revoir après que les lignes aient été décommentées

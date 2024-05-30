@@ -26,8 +26,9 @@ The project will be accessible locally at : http://localhost:3000/
 
 #### Run on a built container
 
-If you've already built your container, start it and run unit tests with :
+If you've already built your container, start it and run with :
 
     docker start path-doc
     docker exec -it path-doc bash
+    yarn dev
 
