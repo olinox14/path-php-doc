@@ -1,7 +1,7 @@
 <template>
   <div :class="['code-block', themeClass]">
     <pre>
-       <code class="php hljs" v-html="highlightedCode" />
+       <code :class="[language, 'hljs']" v-html="highlightedCode" />
     </pre>
   </div>
 </template>
@@ -12,20 +12,25 @@
 
   const props = defineProps({
     code: String,
+    language: {
+      type: String,
+      required: false,
+      default: 'php'
+    }
   })
 
   import {useTheme} from "vuetify";
 
   const theme = useTheme()
-  console.log(theme)
-
   const themeClass = computed(() => theme.name.value)
 
   const highlightedCode = ref(props.code)
+  const pending = ref(true)
 
   watch(() => props.code, (newVal) => {
     if (newVal) {
       highlightedCode.value = hljs.highlightAuto(newVal).value;
+      // pending.value = false
     }
   }, { immediate: true });
 </script>
