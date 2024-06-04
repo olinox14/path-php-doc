@@ -8,6 +8,18 @@
       <div class="body">
         <NuxtPage />
       </div>
+
+      <v-footer no-gutters :height="36">
+        <span>Path-PHP 2024</span>
+        <span>
+          <nuxt-link
+              href="https://github.com/olinox14/path-php/blob/master/LICENCE"
+              target="_blank"
+          >
+            MIT Licence
+          </nuxt-link>
+        </span>
+      </v-footer>
     </v-app>
   </NuxtLayout>
 </template>
@@ -22,6 +34,9 @@
 
 .body {
   padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .topbar-container {
@@ -33,6 +48,23 @@
   margin: 48px 0 24px 0;
   padding-bottom: 9px;
   border-bottom: solid 1px rgba(var(--v-theme-on-neutral), 0.2);
+}
+
+.v-footer {
+  max-height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: rgb(var(--v-theme-neutral-strong));
+  font-size: 12px;
+
+  a {
+    color: rgb(var(--v-theme-on-neutral));
+  }
+
+  span {
+    margin: 0 24px;
+  }
 }
 
 </style>
