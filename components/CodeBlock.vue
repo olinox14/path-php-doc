@@ -81,4 +81,11 @@
 .dark {
   @include meta.load-css("highlight.js/styles/stackoverflow-dark");
 }
+
+// no syntax coloration with shell language
+.shell {
+  * {
+    color: rgba(var(--v-theme-on-code-background)) !important;
+  }
+}
 </style>

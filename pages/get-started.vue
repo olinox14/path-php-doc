@@ -13,7 +13,7 @@
 
   <h2>Usage</h2>
 
-  Just import the <code>Path</code> class, and enjoy :
+  Then, just import the <code>Path</code> class, and enjoy :
 
   <CodeBlock :code="codeUsage" language="php" />
 
