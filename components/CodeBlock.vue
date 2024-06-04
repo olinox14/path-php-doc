@@ -75,10 +75,10 @@
 }
 
 .light {
-  @include meta.load-css("highlight.js/styles/a11y-light");
+  @include meta.load-css("highlight.js/styles/stackoverflow-light");
 }
 
 .dark {
-  @include meta.load-css("highlight.js/styles/a11y-dark");
+  @include meta.load-css("highlight.js/styles/stackoverflow-dark");
 }
 </style>

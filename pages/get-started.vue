@@ -1,10 +1,42 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
+  <h1>Get started</h1>
+
+  <h2>Requirements</h2>
+
+  <p><b>Path-PHP</b> requires PHP 8.0 or ulterior versions.</p>
+
+  <h2>Installation</h2>
+
+  <p>Install with composer :</p>
+
+  <CodeBlock :code="codeInstall" language="shell" />
+
+  <h2>Usage</h2>
+
+  Just import the <code>Path</code> class, and enjoy :
+
+  <CodeBlock :code="codeUsage" language="php" />
 
 </template>
+
+<script setup lang="ts">
+
+const codeInstall = `composer require olinox14/path-php`
+
+const codeUsage = `<?php
+use Path\\Path;
+
+$path = new Path(__file__);
+
+$dir = $path->parent();
+
+foreach ($dir->files() as $file) {
+    if ($file->ext() === 'html') {
+        $file->rename($file->name() . '.md');
+    }
+}
+`
+</script>
 
 <style scoped lang="scss">
 

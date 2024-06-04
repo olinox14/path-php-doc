@@ -8,7 +8,7 @@
       <nuxt-link
           v-for="item in menu" :key="item.label"
           :to="item.to"
-
+          active-class="active"
       >
         {{ item.label }}
       </nuxt-link>
@@ -73,6 +73,11 @@
 
     a:hover {
       color: rgb(var(--v-theme-on-neutral--clickable));
+    }
+
+    a.active {
+      color: rgb(var(--v-theme-on-neutral--clickable));
+      border-bottom: solid 2px rgb(var(--v-theme-on-neutral--clickable));
     }
   }
 

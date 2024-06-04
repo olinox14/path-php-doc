@@ -6,7 +6,9 @@
 
   <CodeBlock :code="code" language="php" />
 
-  <v-btn to="get-started">Get started</v-btn>
+  <div class="d-flex justify-center">
+    <v-btn to="get-started" class="bg-primary">Get started</v-btn>
+  </div>
 </template>
 
 <script setup lang="ts">
