@@ -15,28 +15,20 @@ const code = `
 <?php
 use Path\\Path;
 
-// Get the parent directory of the current script file and list its subdirs
-$script = new Path(__file__);
-$dir = $script->parent();
-var_dump($dir->dirs());
+$dir = new Path('/home/user/workdir');
 
-
-// Get the path of the working directory, iterate over its files and change their permissions
-$path = new Path('.');
-
-foreach($path->files() as $file) {
+foreach ($dir->files() as $file) {
     $file->chmod(755);
 }
 
+$fooDir = $dir->append('foo');
 
-// Put content into a file
-$path = (new Path('.'))->append('readme.md');
+$fooDir->mkdir();
 
-$path->putContent('new readme content');
+$newFile = $fooDir->append('my-file.txt');
 
-// And many more...
+$newFile->putContent('my new content');
 `
-
 </script>
 
 <style scoped lang="scss">
