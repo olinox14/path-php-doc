@@ -2,6 +2,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   ssr: true,
+  target: 'static',
   title: 'Path-PHP Documentation',
   devtools: {
     // @see https://github.com/nuxt/devtools
