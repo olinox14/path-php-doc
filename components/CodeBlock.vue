@@ -1,9 +1,11 @@
 <template>
   <div :class="['code-block', themeClass]">
-    <pre>
-       <code :class="[language, 'hljs']" v-html="highlightedCode" />
-    </pre>
+    <pre><code :class="[language, 'hljs']" v-html="highlightedCode" /></pre>
+    <v-btn icon="fas fa-copy" variant="tonal" class="text-primary" @click="copyCode"/>
   </div>
+  <v-snackbar v-model="showConfirmation" color="success" :timeout="2000">
+    Content copied to clipboard
+  </v-snackbar>
 </template>
 
 <script setup lang="ts">
@@ -31,6 +33,21 @@
       highlightedCode.value = hljs.highlightAuto(newVal).value;
     }
   }, { immediate: true });
+
+  let copyCode = () => { console.error('clipboard is not available')}
+
+  const showConfirmation = ref(false)
+
+  onMounted(() => {
+    copyCode = async () => {
+      try {
+        await navigator.clipboard.writeText(props.code);
+        showConfirmation.value = true
+      } catch (err) {
+        console.error('Failed to copy text: ', err);
+      }
+    }
+  })
 </script>
 
 <style lang="scss">
@@ -38,17 +55,21 @@
 @use "sass:meta";
 
 .code-block {
+  display: flex;
+  flex-direction: row;
   margin: 24px;
-  border-radius: 24px;
   background: rgba(var(--v-theme-code-background));
+  border-radius: 4px;
 
   * {
     background: transparent !important;
   }
 
+  pre {
+    flex: 1;
+  }
+
   code {
-    padding: 8px 32px !important;
-    border-radius: 9px;
     white-space: pre-wrap;
   }
 }
