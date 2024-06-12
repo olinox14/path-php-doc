@@ -30,6 +30,14 @@
 .body, .topbar {
   margin: 0 20%;
   max-width: 100%;
+
+  @media (max-width: 1280px) {
+    margin: 0 10%;
+  }
+
+  @media (max-width: 600px) {
+    margin: 0 5%;
+  }
 }
 
 .body {
