@@ -28,6 +28,10 @@ $('.phpdocumentor-modal').remove()
 $('.phpdocumentor-elements__header a').remove()
 
 docCode.value = $('.phpdocumentor-content').html()
+
+
+
+
 </script>
 
 <style scoped lang="scss">
@@ -45,12 +49,6 @@ docCode.value = $('.phpdocumentor-content').html()
       width: 100%;
       max-width: 100%;
     }
-  }
-
-  .phpdocumentor-on-this-page__sidebar {
-    min-width: 20%;
-    width: 20%;
-    max-width: 20%;
   }
 
   letter-spacing: 0.05rem;
@@ -122,7 +120,7 @@ docCode.value = $('.phpdocumentor-content').html()
   .phpdocumentor-element {
     padding: 18px 0;
 
-    p, dl, section > span, section > section {
+    > p, > dl, > section > span, > section > section {
       padding-left: 18px;
     }
 
@@ -158,6 +156,28 @@ docCode.value = $('.phpdocumentor-content').html()
   }
 
   .phpdocumentor-on-this-page__sidebar {
+    min-width: 20%;
+    width: 20%;
+    max-width: 20%;
+
+    .phpdocumentor-on-this-page__content {
+      position: sticky;
+      top: 24px;
+      right: 8px;
+      max-height: 100vh;
+      overflow-y: auto;
+      padding-bottom: 48px;
+
+      li {
+        list-style: none;
+        padding: 6px;
+      }
+
+      li a {
+        color: rgb(var(--v-theme-on-neutral--clickable));
+      }
+    }
+
     @media (max-width: 1200px) {
       display: none;
     }
