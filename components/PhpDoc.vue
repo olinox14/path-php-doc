@@ -25,6 +25,7 @@ $('.phpdocumentor-table-of-contents').remove()
 $('#toc-methods').remove()
 $('.phpdocumentor-properties').remove()
 $('.phpdocumentor-modal').remove()
+$('.phpdocumentor-elements__header a').remove()
 
 docCode.value = $('.phpdocumentor-content').html()
 </script>
@@ -63,15 +64,15 @@ docCode.value = $('.phpdocumentor-content').html()
   }
 
   h3 {
-    font-size: 28px;
-    margin-bottom: 16px;
+    font-size: 22px;
+    margin: 48px 0 16px 0;
   }
 
   h4 {
     font-size: 20px;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     padding: 6px;
-    color: rgb(var(--v-theme-on-neutral--clickable));
+    color: rgb(var(--v-theme-on-neutral));
 
     .headerlink {
       display: none;
@@ -81,6 +82,7 @@ docCode.value = $('.phpdocumentor-content').html()
   h4:hover {
     .headerlink {
       display: inline;
+      color: rgb(var(--v-theme-on-neutral--clickable));
     }
   }
 
