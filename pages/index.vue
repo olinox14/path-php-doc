@@ -18,9 +18,13 @@
 
   <CodeBlock :code="codeBuiltinOperations" language="php" />
 
-  <p>And many more :</p>
+  <p>And more :</p>
 
   <CodeBlock :code="codeAdditionalOperations" language="php" />
+
+  <p>Get explicit and catchable exceptions :</p>
+
+  <CodeBlock :code="codeExceptions" language="php" />
 
   <div class="d-flex justify-center">
     <v-btn to="get-started" class="bg-primary">Get started</v-btn>
@@ -38,6 +42,8 @@ $dir = new Path('/home/user/myFile.txt');
 const codeManipulate = `$dir = new Path('/home/user/workdir');
 
 $newPath = $dir->append('foo.txt');
+
+$otherPath = $dir->append('subDir', 'foo.txt');
 
 $parentDir = $dir->parent();
 `
@@ -60,6 +66,12 @@ $file->chmod(0777);
 const codeAdditionalOperations = `$dir = new Path('/home/user/foo');
 $target = new Path('/home/user/bar');
 $dir->copyTree($target);
+`
+
+const codeExceptions = `$file = new Path('/home/user/foo.txt');
+$file->remove();
+
+// >>> FileNotFoundException('File does not exist: /home/user/foo.txt')
 `
 </script>
 
