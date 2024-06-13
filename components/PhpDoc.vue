@@ -27,6 +27,24 @@ $('.phpdocumentor-properties').remove()
 $('.phpdocumentor-modal').remove()
 $('.phpdocumentor-elements__header a').remove()
 
+
+const urlRegex = /classes\/Path-Path\.html#method_(\w*)/;
+
+$('a').each((_, element) => {
+  const link = $(element);
+  let href = link.attr('href');
+
+  if (href) {
+    const match = href.match(urlRegex);
+
+    if (match !== null) {
+      const localAnchor = `#method_${match[1]}`;
+      link.attr('href', localAnchor);
+      link.attr('id', match[1])
+    }
+  }
+});
+
 docCode.value = $('.phpdocumentor-content').html()
 
 
@@ -102,6 +120,7 @@ docCode.value = $('.phpdocumentor-content').html()
     margin-bottom: 16px;
 
     p {
+      padding-left: 18px;
       margin: 14px 0;
     }
 

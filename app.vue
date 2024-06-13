@@ -27,6 +27,10 @@
 </script>
 
 <style scoped lang="scss">
+html {
+  scroll-behavior: smooth;
+}
+
 .body, .topbar {
   margin: 0 20%;
   max-width: 100%;
