@@ -188,6 +188,12 @@ docCode.value = $('.phpdocumentor-content').html()
       max-height: 100vh;
       overflow-y: auto;
       padding-bottom: 48px;
+      display: flex;
+      flex-direction: column;
+
+      .phpdocumentor-on-this-page__title {
+        margin-bottom: 12px;
+      }
 
       li {
         list-style: none;
@@ -195,7 +201,7 @@ docCode.value = $('.phpdocumentor-content').html()
       }
 
       li a {
-        color: rgb(var(--v-theme-on-neutral--clickable));
+        color: rgb(var(--v-theme-on-neutral));
       }
     }
 

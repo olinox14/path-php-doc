@@ -19,7 +19,7 @@
 
     <CodeBlock :code="codeBrowse" language="php" />
 
-    <p>Perform all file operations allowed by PHP's builtin functions :</p>
+    <p>Perform all the file operations allowed by PHP's builtin functions :</p>
 
     <CodeBlock :code="codeBuiltinOperations" language="php" />
 

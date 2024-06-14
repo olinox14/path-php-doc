@@ -14,9 +14,13 @@
   <h2>Usage</h2>
 
   <p>
-    Then, just import the <code>Path</code> class and use it :
+    Then, just import the <code>Path</code> class :
   </p>
   <CodeBlock :code="codeUsage" language="php" />
+
+  <div class="d-flex justify-center">
+    <v-btn to="api" class="bg-primary">API documentation</v-btn>
+  </div>
 
 </template>
 

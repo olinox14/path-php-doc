@@ -141,7 +141,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       messages: { en },
     },
     theme: {
-      defaultTheme: 'light',
+      defaultTheme: 'dark',
       themes: {
         light: lightTheme,
         dark: darkTheme
