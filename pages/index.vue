@@ -2,32 +2,38 @@
 
   <h1>Path-PHP</h1>
 
-  <p>An intuitive, standalone, and object-oriented library for file and path operations.</p>
+  <div class="pa-6">
+    <p class="mb-6">
+      <strong>An intuitive, standalone, and object-oriented library for file and path operations.</strong>
+    </p>
 
-  <CodeBlock :code="codeStart" language="php" />
+    <p>Make a Path object :</p>
 
-  <p>Manipulate your file paths with ease :</p>
+    <CodeBlock :code="codeStart" language="php" />
 
-  <CodeBlock :code="codeManipulate" language="php" />
+    <p>Build and manipulate paths :</p>
 
-  <p>Browse directories and files :</p>
+    <CodeBlock :code="codeManipulate" language="php" />
 
-  <CodeBlock :code="codeBrowse" language="php" />
+    <p>Browse directories and files :</p>
 
-  <p>Perform all file operations allowed by PHP's builtin functions :</p>
+    <CodeBlock :code="codeBrowse" language="php" />
 
-  <CodeBlock :code="codeBuiltinOperations" language="php" />
+    <p>Perform all file operations allowed by PHP's builtin functions :</p>
 
-  <p>And more :</p>
+    <CodeBlock :code="codeBuiltinOperations" language="php" />
 
-  <CodeBlock :code="codeAdditionalOperations" language="php" />
+    <p>And more :</p>
 
-  <p>Get explicit and catchable exceptions :</p>
+    <CodeBlock :code="codeAdditionalOperations" language="php" />
 
-  <CodeBlock :code="codeExceptions" language="php" />
+    <p>Get explicit and catchable exceptions :</p>
 
-  <div class="d-flex justify-center">
-    <v-btn to="get-started" class="bg-primary">Get started</v-btn>
+    <CodeBlock :code="codeExceptions" language="php" />
+
+    <div class="d-flex justify-center">
+      <v-btn to="get-started" class="bg-primary">Get started</v-btn>
+    </div>
   </div>
 </template>
 

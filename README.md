@@ -32,3 +32,7 @@ If you've already built your container, start it and run with :
     docker exec -it path-doc bash
     yarn dev
 
+To generate :
+
+    docker exec -it path-doc bash
+    yarn generate

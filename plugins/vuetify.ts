@@ -53,7 +53,7 @@ export const lightTheme: Theme = {
     'surface': '#ffffff',
     'on-surface': '#000000',
 
-    'primary': '#787fb4',
+    'primary': '#515794',
     'on-primary': '#ffffff',
 
     'primary-alt': '#a9e0d6',
@@ -65,9 +65,9 @@ export const lightTheme: Theme = {
     'neutral-strong': '#777777',
     'on-neutral-strong': '#ecf0f5',
 
-    'neutral': '#e6e6e6',
+    'neutral': '#ffffff',
     'on-neutral': '#404040',
-    'on-neutral--clickable': '#5b61a4',
+    'on-neutral--clickable': '#515794',
 
     'neutral-soft': '#ecf0f5',
     'on-neutral-soft': '#464646',
@@ -99,8 +99,8 @@ export const darkTheme: Theme = {
     'surface': '#262626',
     'on-surface': '#ffffff',
 
-    'primary': '#00ad8e',
-    'on-primary': '#ffffff',
+    'primary': '#adb2d2',
+    'on-primary': '#404040',
 
     'primary-alt': '#a9e0d6',
     'on-primary-alt': '#777777',
@@ -111,7 +111,7 @@ export const darkTheme: Theme = {
     'neutral-strong': '#595959',
     'on-neutral-strong': '#ecf0f5',
 
-    'neutral': '#324150',
+    'neutral': '#131a20',
     'on-neutral': '#cccccc',
     'on-neutral--clickable': '#9ca1c9',
 

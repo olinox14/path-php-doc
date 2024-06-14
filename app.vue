@@ -31,6 +31,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.v-application {
+  background: rgb(var(--v-theme-neutral));
+  color: rgb(var(--v-theme-on-neutral));
+}
+
 .body, .topbar {
   margin: 0 20%;
   max-width: 100%;
