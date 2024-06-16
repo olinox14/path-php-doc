@@ -1,10 +1,17 @@
 <template>
   <div class="topbar">
-    <nuxt-link to="/">
-      <v-img src="/logo.png" :width="140" />
+    <v-btn
+        icon="fas fa-bars"
+        variant="plain"
+        class="smAndDown mr-2"
+        @click="isMenuOpen = !isMenuOpen"
+    />
+
+    <nuxt-link to="/" class="logo">
+      <v-img src="/logo.png" />
     </nuxt-link>
 
-    <div class="menu">
+    <div class="menu mdAndUp">
       <nuxt-link
           v-for="item in menu" :key="item.label"
           :to="item.to"
@@ -13,6 +20,7 @@
         {{ item.label }}
       </nuxt-link>
     </div>
+    <v-spacer class="smAndDown" />
 
     <div class="icon-links">
       <ThemeSwitcher />
@@ -24,11 +32,31 @@
         <v-icon>fab fa-github</v-icon>
       </nuxt-link>
     </div>
+
+    <v-navigation-drawer v-model="isMenuOpen" app temporary>
+      <v-list nav dense>
+        <v-list-item
+            v-for="(item, index) in menu"
+            :key="item.label"
+            :to="item.to"
+            class="menuItem"
+        >
+          <v-list-item-title class="d-flex flex-row w-100">
+            <span class="flex-grow-1">
+              {{ item.label }}
+            </span>
+          </v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
 <script setup lang="ts">
   import ThemeSwitcher from "~/components/ThemeSwitcher.vue";
+  import type {Ref} from "@vue/reactivity";
+
+  const isMenuOpen: Ref<boolean> = ref(false)
 
   const menu = [
     {
@@ -51,12 +79,37 @@
 </script>
 
 <style scoped lang="scss">
+
+@media (min-width: 960px) {
+  .smAndDown {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .mdAndUp {
+    display: none;
+  }
+}
+
 .topbar {
   height: 72px;
   display: flex;
   flex-direction: row;
   padding: 18px;
   align-items: center;
+
+  .logo {
+    width: 140px;
+
+    @media (max-width: 960px) {
+      width: 25%;
+      min-width: 30px;
+    }
+  }
+
+  .v-btn {
+    color: rgb(var(--v-theme-on-neutral));
+  }
 
   .menu {
     margin: 0 auto;
