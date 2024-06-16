@@ -2,7 +2,7 @@
 
   <h1>Path-PHP</h1>
 
-  <div class="pa-6">
+  <div class="content">
     <p class="mb-6">
       <strong>An intuitive, standalone, and object-oriented library for file and path operations.</strong>
     </p>
@@ -82,5 +82,11 @@ $file->remove();
 </script>
 
 <style scoped lang="scss">
+
+@media (min-width: 600px) {
+  .content {
+    padding: 24px;
+  }
+}
 
 </style>

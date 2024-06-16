@@ -45,7 +45,7 @@ html {
   }
 
   @media (max-width: 600px) {
-    margin: 0 5%;
+    margin: 0 3%;
   }
 }
 
@@ -65,6 +65,10 @@ html {
   margin: 48px 0 24px 0;
   padding-bottom: 9px;
   border-bottom: solid 1px rgba(var(--v-theme-on-neutral), 0.2);
+
+  @media (max-width: 600px) {
+    margin: 24px 0;
+  }
 }
 
 .v-footer {

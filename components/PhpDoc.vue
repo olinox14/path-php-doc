@@ -59,6 +59,10 @@ docCode.value = $('.phpdocumentor-content').html()
   display: flex;
   flex-direction: row;
 
+  > section {
+    max-width: 99%;
+  }
+
   .phpdocumentor-element {
     min-width: 80%;
     width: 80%;
@@ -93,21 +97,31 @@ docCode.value = $('.phpdocumentor-content').html()
     color: rgb(var(--v-theme-on-neutral));
 
     .headerlink {
+      color: rgb(var(--v-theme-on-neutral--clickable));
+      margin-left: 4px;
+      padding: 3px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .headerlink {
       display: none;
     }
-  }
 
-  h4:hover {
-    .headerlink {
-      display: inline;
-      color: rgb(var(--v-theme-on-neutral--clickable));
+    h4:hover {
+      .headerlink {
+        display: inline;
+      }
     }
   }
-
 
   h5 {
     margin: 8px 0;
     padding: 8px 18px;
+
+    @media (max-width: 600px) {
+      padding: 4px;
+    }
   }
 
   .phpdocumentor-summary {
@@ -124,6 +138,10 @@ docCode.value = $('.phpdocumentor-content').html()
     p {
       padding-left: 18px;
       margin: 14px 0;
+
+      @media (max-width: 600px) {
+        padding-left: 6px;
+      }
     }
 
     blockquote {
@@ -143,11 +161,19 @@ docCode.value = $('.phpdocumentor-content').html()
 
     > p, > dl, > section > span, > section > section {
       padding-left: 18px;
+
+      @media (max-width: 600px) {
+        padding-left: 6px;
+      }
     }
 
     section > .phpdocumentor-signature__response_type {
       padding-left: 18px;
       font-style: italic;
+
+      @media (max-width: 600px) {
+        padding-left: 6px;
+      }
     }
   }
 
@@ -163,6 +189,10 @@ docCode.value = $('.phpdocumentor-content').html()
     a, abbr {
       color: rgba(var(--v-theme-on-code-background));
     }
+
+    @media (max-width: 600px) {
+      margin: 6px;
+    }
   }
 
   .phpdocumentor-argument-list__entry {
@@ -173,6 +203,10 @@ docCode.value = $('.phpdocumentor-content').html()
 
     a, abbr {
       color: rgba(var(--v-theme-on-code-background));
+    }
+
+    @media (max-width: 600px) {
+      padding: 4px;
     }
   }
 
@@ -198,6 +232,10 @@ docCode.value = $('.phpdocumentor-content').html()
       li {
         list-style: none;
         padding: 6px;
+
+        @media (max-width: 600px) {
+          padding: 2px;
+        }
       }
 
       li a {

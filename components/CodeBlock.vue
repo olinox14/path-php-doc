@@ -72,6 +72,10 @@
   code {
     white-space: pre-wrap;
   }
+
+  @media (max-width: 600px) {
+    margin: 24px 6px;
+  }
 }
 
 .light {
