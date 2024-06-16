@@ -1,7 +1,13 @@
 <template>
   <div :class="['code-block', themeClass]">
     <pre><code :class="[language, 'hljs']" v-html="highlightedCode" /></pre>
-    <v-btn icon="fas fa-copy" variant="tonal" class="text-primary" @click="copyCode"/>
+    <v-btn
+        icon="fas fa-copy"
+        variant="tonal"
+        aria-label="Copy the content to the clipboard"
+        class="text-primary"
+        @click="copyCode"
+    />
   </div>
   <v-snackbar v-model="showConfirmation" color="success" :timeout="2000">
     Content copied to clipboard

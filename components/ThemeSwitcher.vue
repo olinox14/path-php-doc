@@ -7,6 +7,7 @@
       false-icon="fas fa-sun"
       true-value="dark"
       true-icon="fas fa-moon"
+      aria-label="Switch between light and dark theme"
   />
 </template>
 

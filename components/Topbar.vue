@@ -4,11 +4,12 @@
         icon="fas fa-bars"
         variant="plain"
         class="smAndDown mr-2"
+        aria-label="Show or hide the website menu"
         @click="isMenuOpen = !isMenuOpen"
     />
 
     <nuxt-link to="/" class="logo">
-      <v-img src="/logo.png" />
+      <v-img src="/logo.png" alt="logo path-php" />
     </nuxt-link>
 
     <div class="menu mdAndUp">
@@ -29,7 +30,7 @@
           href="https://github.com/olinox14/path-php"
           target="_blank"
       >
-        <v-icon>fab fa-github</v-icon>
+        <v-icon aria-label="Open the Github page of Path-php">fab fa-github</v-icon>
       </nuxt-link>
     </div>
 
