@@ -1,4 +1,9 @@
 <template>
+  <Meta
+      title="Path-PHP - Get Started"
+      description="How to install and use the Path-PHP library"
+  />
+
   <h1>Get started</h1>
 
   <h2>Requirements</h2>
