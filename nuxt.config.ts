@@ -49,6 +49,7 @@ export default defineNuxtConfig({
     },
     'nuxt-lodash',
     '@nuxt/devtools',
+    '@nuxtjs/sitemap',
   ],
   webfontloader: {
     google: {
