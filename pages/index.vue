@@ -1,6 +1,6 @@
 <template>
   <PageMeta
-      title="Path-PHP"
+      title="Path-PHP - Documentation"
       description="Path-PHP documentation. An intuitive, standalone, and object-oriented library for file and path operations"
   />
 

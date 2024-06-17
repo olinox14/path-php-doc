@@ -28,7 +28,7 @@ $('.phpdocumentor-modal').remove()
 $('.phpdocumentor-elements__header a').remove()
 $('.phpdocumentor-on-this-page__content>ul>li').slice(0, 4).remove();
 $('.phpdocumentor-on-this-page__content>ul>a').remove();
-$('.phpdocumentor-on-this-page__content a[href="classes/Path-Path.html"]').remove();
+$('a[href="classes/Path-Path.html"]').remove();
 
 const urlRegex = /classes\/Path-Path\.html#method_(\w*)/;
 

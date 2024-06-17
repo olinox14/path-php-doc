@@ -23,7 +23,18 @@
     </v-app>
   </NuxtLayout>
 </template>
+
 <script setup lang="ts">
+const route = useRoute()
+
+useHead(() => ({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://path-php.net' + route.path,
+    },
+  ],
+}))
 </script>
 
 <style scoped lang="scss">

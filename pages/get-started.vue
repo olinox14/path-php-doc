@@ -1,7 +1,7 @@
 <template>
   <PageMeta
       title="Path-PHP - Get Started"
-      description="How to install and use the Path-PHP library"
+      description="How to install and use the Path-PHP library."
   />
 
   <h1>Get started</h1>
