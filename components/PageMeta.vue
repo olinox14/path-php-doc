@@ -22,27 +22,6 @@ const props = defineProps({
   },
 })
 
-useHead({
-  title: props.title,
-  meta: [
-    {
-      name: 'description', content: props.description
-    },
-    { charset: 'utf-8' },
-    {
-      name: 'viewport',
-      content: 'width=device-width, initial-scale=1'
-    },
-  ],
-  link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap',
-    },
-  ]
-})
-
 useSeoMeta({
   title: props.title,
   ogTitle: props.title,

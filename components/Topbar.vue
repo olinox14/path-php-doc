@@ -29,13 +29,14 @@
       <nuxt-link
           href="https://github.com/olinox14/path-php"
           target="_blank"
+          aria-label="Open the Github page of Path-php"
       >
-        <v-icon aria-label="Open the Github page of Path-php">fab fa-github</v-icon>
+        <v-icon>fab fa-github</v-icon>
       </nuxt-link>
     </div>
 
     <v-navigation-drawer v-model="isMenuOpen" app temporary>
-      <v-list nav dense>
+      <v-list nav dense aria-label="Menu">
         <v-list-item
             v-for="(item, index) in menu"
             :key="item.label"

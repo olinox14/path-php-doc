@@ -1,7 +1,7 @@
 <template>
-  <Meta
+  <PageMeta
       title="Path-PHP"
-      description="An intuitive, standalone, and object-oriented library for file and path operations"
+      description="Path-PHP documentation. An intuitive, standalone, and object-oriented library for file and path operations"
   />
 
   <h1>Path-PHP</h1>

@@ -1,5 +1,5 @@
 <template>
-  <Meta
+  <PageMeta
       title="Path-PHP - API"
       description="API Documentation of the Path-PHP library"
   />
