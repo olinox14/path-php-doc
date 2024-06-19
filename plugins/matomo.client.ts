@@ -3,7 +3,7 @@ import VueMatomo from 'vue-matomo'
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(VueMatomo, {
-        host: 'https://path-php.net',
+        host: 'http://stats.path-php.net',
         siteId: 1,
         // Enables automatically registering pageviews on the router
         router: nuxtApp.$router,

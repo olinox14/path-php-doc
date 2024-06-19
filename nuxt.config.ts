@@ -79,7 +79,7 @@ export default defineNuxtConfig({
       scrollBehaviorType: 'smooth',
     },
   },
-  sitemap: {
-    hostname: 'https://path-php.net/'
+  site: {
+    url: 'https://path-php.net'
   },
 })
