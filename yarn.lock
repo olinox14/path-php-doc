@@ -10464,6 +10464,7 @@ __metadata:
     sass: "npm:^1.70.0"
     typescript: "npm:^5.3.3"
     vite-plugin-vuetify: "npm:^2.0.3"
+    vue-matomo: "npm:^4.2.0"
     vue-router: "npm:^4.3.0"
     vuetify: "npm:^3.5.15"
   languageName: unknown
@@ -13550,6 +13551,13 @@ __metadata:
   peerDependencies:
     eslint: ">=6.0.0"
   checksum: 10c0/79593073adbce8971565133c70a203f12f0be0f8c5e3a4063796fd56e5de64f1f3ad7f91be5a787a7a3fe751306ed22086ee8369d52725be95f452827ce670de
+  languageName: node
+  linkType: hard
+
+"vue-matomo@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "vue-matomo@npm:4.2.0"
+  checksum: 10c0/c611d2c9be0145f225f3422e8551568593d9d8cbf7c26cf212663f81a3acbb73b348115356def9582f7f3b9ef8c9088b4eeccb8cb4d6afc53bfc559d53066653
   languageName: node
   linkType: hard
 
