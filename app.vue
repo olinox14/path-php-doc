@@ -74,6 +74,9 @@ html {
 .topbar-container {
   border-bottom: solid 1px rgba(var(--v-theme-on-neutral), 0.2);
   margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  background: rgb(var(--v-theme-neutral));
 }
 
 :deep(h2) {

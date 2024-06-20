@@ -217,7 +217,7 @@ docCode.value = $('.phpdocumentor-content').html()
 
     .phpdocumentor-on-this-page__content {
       position: sticky;
-      top: 24px;
+      top: 100px;
       right: 8px;
       max-height: 100vh;
       overflow-y: auto;
