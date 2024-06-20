@@ -77,6 +77,7 @@ html {
   position: sticky;
   top: 0;
   background: rgb(var(--v-theme-neutral));
+  z-index: 1000;
 }
 
 :deep(h2) {

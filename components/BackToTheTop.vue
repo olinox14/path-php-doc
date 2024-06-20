@@ -37,5 +37,14 @@ const onTopIntersect = (intersect: boolean) => {
   border-radius: 32px;
   background: rgb(var(--v-theme-primary));
   color: rgb(var(--v-theme-on-primary));
+
+  @media (max-width: 1350px) {
+    right: 5%;
+  }
+
+  @media (max-width: 600px) {
+    bottom: 30px;
+    right: 15%;
+  }
 }
 </style>
