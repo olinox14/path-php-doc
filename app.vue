@@ -1,12 +1,16 @@
 <template>
   <NuxtLayout>
     <v-app>
+      <div id="top" />
+
       <div class="topbar-container">
         <Topbar />
       </div>
 
       <div class="body">
         <NuxtPage />
+
+        <BackToTheTop />
       </div>
 
       <v-footer no-gutters :height="36">

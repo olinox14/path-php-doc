@@ -74,10 +74,6 @@
       to: "api"
     }
   ]
-
-  const onChangeThemeClick = () => {
-
-  }
 </script>
 
 <style scoped lang="scss">
