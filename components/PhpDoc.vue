@@ -32,6 +32,7 @@ $('a[href="classes/Path-Path.html"]').remove();
 
 const urlRegex = /classes\/Path-Path\.html#method_(\w*)/;
 
+// Add anchors to methods names
 $('a').each((_, element) => {
   const link = $(element);
   let href = link.attr('href');
@@ -42,7 +43,6 @@ $('a').each((_, element) => {
     if (match !== null) {
       const localAnchor = `#method_${match[1]}`;
       link.attr('href', localAnchor);
-      link.attr('id', match[1])
     }
   }
 });
@@ -95,6 +95,7 @@ docCode.value = $('.phpdocumentor-content').html()
     margin-bottom: 12px;
     padding: 6px;
     color: rgb(var(--v-theme-on-neutral));
+    scroll-margin-top: 100px;
 
     .headerlink {
       color: rgb(var(--v-theme-on-neutral--clickable));
